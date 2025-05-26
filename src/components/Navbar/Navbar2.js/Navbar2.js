@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 const Navbar2 = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center sticky top-0 z-50">
       {/* topbar */}
       <div className="topbar flex flex-row justify-between items-center w-full px-9 py-5 border-b border-[#4f79a9] text-[#4f79a9]">
         <div className="flex flex-row gap-4 items-center justify-between">

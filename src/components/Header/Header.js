@@ -13,9 +13,7 @@ const Header = () => {
       {isHome ? (
         <Navbar1 />
       ) : (
-        <div>
           <Navbar2 />
-        </div>
       )}
     </>
   );

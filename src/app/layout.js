@@ -1,5 +1,6 @@
+import Footer from "@/components/Footer/Footer";
 import "./globals.css";
-import Header from "@/components/Header/page";
+import Header from "@/components/Header/Header";
 
 export const metadata = {
   title: "Omnivus",
@@ -16,8 +17,9 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <Header />
+        <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
