@@ -9,3 +9,11 @@
     background-color: #f5faff;
     font-family: "GilroyBold", sans-serif;
 }
+
+html, body {
+  overscroll-behavior: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
