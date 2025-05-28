@@ -4,7 +4,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="footer text-white bg-[#00152e] w-full">
-      <div className="upperpart bg-[#00152e] flex flex-col lg:flex-row justify-start lg:gap-[7em] gap-[3.5em] mx-auto lg:py-[6em] py-[5em] w-[80%] lg:w-auto border-b-[0.3px] border-[#616161]">
+      <div className="upperpart bg-[#00152e] flex flex-col lg:flex-row justify-start lg:gap-[7em] gap-[3.5em] mx-auto lg:py-[6em] py-[5em] w-[80%] border-b-[0.3px] border-[#616161]">
         <div className="bg-[#00152e] lg:w-[32%]">
           <Image
             src="/footer.webp"

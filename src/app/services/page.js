@@ -2,8 +2,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
   return (
     <div>
       <div className="text-center mt-20 mb-[15em]">
@@ -20,7 +26,7 @@ const Services = () => {
           </Link>
         </h2>
       </div>
-      <div className="flex flex-col items-center justify-center mt-10 mb-[8em] lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-8  lg:w-[80%] lg:mx-auto">
+      <div className="flex flex-col items-center justify-center mt-10 mb-[8em] lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-8  lg:w-[80%] lg:mx-auto" data-aos="fade-up">
         <div className="relative w-[330px] h-[267px] mb-8 group">
           <Image src="/ser1.webp" alt="img2" fill className="object-cover" />
           <div className="absolute bottom-0 w-full h-1/4 hover:h-[65%] bg-[rgba(0,34,73,0.7)] hover:bg-[#0C59DBDD] flex flex-col items-center justify-start text-white font-extrabold text-lg transition-all duration-[400ms] ease-in-out overflow-hidden">
