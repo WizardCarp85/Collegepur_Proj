@@ -141,9 +141,13 @@ export default function Home() {
       </div>
       {/* Fourth Container */}
       <div className="container4 flex flex-col items-center justify-center pb-[7em] lg:pt-8">
-        <h2 className="text-[#0C59DB] text-sm text-center font-extrabold px-12 tracking-widest pb-4">OUR LATEST SERVICES</h2>
-        <h1 className="text-[#002249] text-4xl text-center font-extrabold px-12 pb-12 lg:text-6xl lg:px-[6em]">We Offer Better Soluation For Your IT Business</h1>
-        <div className="px-[5em] py=[2em] flex flex-col gap-8 lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-8 lg:px-[6em] lg:py-[4em]">
+        <h2 className="text-[#0C59DB] text-sm text-center font-extrabold px-12 tracking-widest pb-4">
+          OUR LATEST SERVICES
+        </h2>
+        <h1 className="text-[#002249] text-4xl text-center font-extrabold px-12 pb-12 lg:text-6xl lg:px-[6em]">
+          We Offer Better Soluation For Your IT Business
+        </h1>
+        <div className="px-[8em] py=[2em] flex flex-col gap-8 lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-8 lg:px-[6em] lg:py-[4em]">
           <div className="p-8 bg-[#F5FAFF]">
             <i className="fa-solid fa-laptop-code text-5xl pb-5 text-[#ef452e]"></i>
             <h2 className="font-extrabold pb-6 text-2xl">Desktop Computing</h2>
@@ -192,6 +196,42 @@ export default function Home() {
               accusantium doloremque laudantiutotam
             </p>
           </div>
+        </div>
+      </div>
+      {/* Fifth container */}
+      <div className="container6 bg-[#0c59db] bg-[url('/container5bg.webp')] bg- -full pb-[7rem] lg:pl-[6em] lg:pt-[2em] lg:pb-[12em]">
+        <div className="cont5-heading flex flex-col px-[4em] py-[6em] text-white lg:flex-row lg:justify-between lg:items-center">
+          <div className="heading w-[90%]">
+            <h2 className="font-extrabold text-sm pb-4 tracking-widest">LATEST CASE STUDIES</h2>
+            <h1 className="font-extrabold text-4xl pb-8 lg:text-6xl lg:w-[50%]">Reads Our Recent Case Studies</h1>
+          </div>
+          <div className="head-navigate w-[20%]">
+            <i className="fa-solid fa-arrow-left bg-[#FFFFFF1A] p-5 border border-[#0C59DB] rounded-full text-sm mr-3 hover:bg-white hover:text-[#0C59DB] lg:scale-125 cursor-pointer"></i>
+            <i className="fa-solid fa-arrow-right bg-[#FFFFFF1A] p-5 border border-[#0C59DB] rounded-full text-sm hover:bg-white hover:text-[#0C59DB] lg:scale-125 lg:ml-4 cursor-pointer"></i>
+          </div>
+        </div>
+        <div className="cont5-img flex flex-row justify-center items-center gap-12 lg:pt-8">
+          <Image
+            src="/container5pic1.webp"
+            alt="container5img"
+            height={320}
+            width={240}
+            className="lg:scale-150 mr-40 hover:brightness-50 transition-all duration-700 ease-in-out"
+          ></Image>
+          <Image
+            src="/container5pic2.webp"
+            alt="container5img"
+            height={320}
+            width={240}
+            className="lg:scale-150 mr-40 hover:brightness-50 transition-all duration-700 ease-in-out"
+          ></Image>
+          <Image
+            src="/container5pic3.webp"
+            alt="container5img"
+            height={320}
+            width={240}
+            className="lg:scale-150 hover:brightness-50 transition-all duration-700 ease-in-out"
+          ></Image>
         </div>
       </div>
     </div>
