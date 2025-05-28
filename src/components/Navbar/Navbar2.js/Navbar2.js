@@ -24,38 +24,70 @@ const Navbar2 = () => {
         </div>
       </div>
 
-      {/* bottom */}
-      <div className="navbar1 flex items-center justify-between py-7 px-9 text-base text-[#555555] w-full">
+      {/* bottom 1 */}
+      <div className="navbar1 hidden lg:flex items-center justify-between py-7 px-9 text-base text-[#555555] w-full">
         <div className="logo">
           <Link href="/">
             <Image src="/logo.webp" alt="desc" width={164} height={60} />
           </Link>
         </div>
         <div className="navigate flex gap-7 items-center justify-between text-[#4f79a9]">
-          <Link href="/" className="links font-semibold text-[1rem] hover:text-[#0c59db]">
+          <Link
+            href="/"
+            className="links font-semibold text-[1rem] hover:text-[#0c59db]"
+          >
             HOME
             <span className="dropdown pl-2 font-thin text-[#a3a3a3]">+</span>
           </Link>
-          <Link href="/about" className="links font-semibold text-[1rem] hover:text-[#0c59db]">
+          <Link
+            href="/about"
+            className="links font-semibold text-[1rem] hover:text-[#0c59db]"
+          >
             ABOUT
           </Link>
-          <Link href="/services" className="links font-semibold text-[1rem] hover:text-[#0c59db]">
+          <Link
+            href="/services"
+            className="links font-semibold text-[1rem] hover:text-[#0c59db]"
+          >
             SERVICES
             <span className="dropdown pl-2 font-thin text-[#a3a3a3]">+</span>
           </Link>
-          <Link href="/pages" className="links font-semibold text-[1rem] hover:text-[#0c59db]">
+          <Link
+            href="/pages"
+            className="links font-semibold text-[1rem] hover:text-[#0c59db]"
+          >
             PAGES
             <span className="dropdown pl-2 font-thin text-[#a3a3a3]">+</span>
           </Link>
-          <Link href="/blog" className="links font-semibold text-[1rem] hover:text-[#0c59db]">
+          <Link
+            href="/blog"
+            className="links font-semibold text-[1rem] hover:text-[#0c59db]"
+          >
             BLOG
             <span className="dropdown pl-2 font-thin text-[#a3a3a3]">+</span>
           </Link>
-          <Link href="/contact" className="links font-semibold text-[1rem] hover:text-[#0c59db]">
+          <Link
+            href="/contact"
+            className="links font-semibold text-[1rem] hover:text-[#0c59db]"
+          >
             CONTACT
           </Link>
         </div>
         <div>
+          <button className="bg-[#0c59db] text-white px-[4em] py-5 ml-2 border-[#0c59db] rounded-lg border-2 font-bold hover:bg-white hover:text-[#0c59db] hover:border-[#0c59db] transition-all duration-300">
+            Get A Quote
+          </button>
+        </div>
+      </div>
+      {/* bottom 2 */}
+      <div className="lg:hidden flex items-center justify-between py-5 px-5 w-full">
+        <div className="logo">
+          <Link href="/">
+            <Image src="/logo.webp" alt="desc" width={164} height={60} />
+          </Link>
+        </div>
+        <div className="flex items-center justify-between">
+          <i className="fa-solid fa-bars text-3xl cursor-pointer text-[#0c59db] bg-white mr-8 px-4 py-2 border border-[#0c59db] rounded-lg"></i>
           <button className="bg-[#0c59db] text-white px-[4em] py-5 ml-2 border-[#0c59db] rounded-lg border-2 font-bold hover:bg-white hover:text-[#0c59db] hover:border-[#0c59db] transition-all duration-300">
             Get A Quote
           </button>
